@@ -1,15 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Pages/Main'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import MovieView from './components/Pages/MovieView'
+import AddMovie from './components/Pages/AddMovie'
 
-import Menu from './components/Menu/Menu';
-import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Menu />
-      <Header />
+      <Router>
+        <Switchh>
+          <Route path="/" exact component={ Main } />
+          <Route path="/filmes/:id" component={ MovieView } />
+          <Route path="/filmes" component={ AddMovie } />
+        </Switchh>
+        
+      </Router>
     </div>
   );
 }

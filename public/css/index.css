@@ -164,7 +164,7 @@ button:focus {
 
 }
 
-.more-details button {
+.more-details a {
     background-color: #e72f85;
     border: 0px;
     border-radius: 20px;
@@ -178,12 +178,12 @@ button:focus {
     cursor: pointer;
 }
 
-.more-details button:hover {
+.more-details a:hover {
     background-color: #e5bace;
     color: #e72f85;
 }
 
-.more-details button span {
+.more-details a span {
     margin-top: -2px;
     font-weight: 600;
 }
